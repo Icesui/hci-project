@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+            <body>
+                <div id = "header">
+                    <img src = catryo.jpg style="float: left; width: 100px; height: 100px;">
+                    <h2 style="float: right;margin-right:42%;">LOGIN</h2>
+                    </div>
+
+                <div id = login>
+                <label>Username:</label><br>
+                <input type = "text" id = "username" required><br>
+                <br>
+                <label>Password:</label><br>
+                <input type = "password" id = "password" required><br>
+                <br>
+                <input type = "checkbox" id = "showpassword" onchange = "togglepassword()">
+                <label for = "showpassword">Show Password</label><br>
+                <br>
+                <input type = "submit" onclick = "login()" value = "Login"><br>
+                <p id="loginMessage"></p>
+                </a>
+                <a href = "registerform.html">
+                <input type = "submit" value = "Register"><br>
+                </a>
+                <br>
+                </div>
+        </body>
+</html>
+
+<script src="script.js"></script>
+<script src="login.js"></script>

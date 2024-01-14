@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+            <body>
+                <div id = "header">
+                    <img src = catryo.jpg style="float: left; width: 100px; height: 100px;">
+                    <h2 style="float: right;margin-right:42%;">REGISTER</h2>
+                    </div>
+
+                <div id = register-input>
+                <form id = "registeruserpassword">
+                <input type = "text" id = "newUsername" name = "newUsername" placeholder="Username:"><br>
+                <br>
+                <input type = "password" id = "newPassword" name = "newPassword" placeholder="Password:"><br>
+                <input type = "checkbox" id = "showpassword" onchange = "togglepassword()">
+                <label for = "showpassword">Show Password</label><br>
+                </form>
+                <input type = "text" id = "firstname" placeholder="First Name:"><br>
+                <br>
+                <input type = "text" id = "lastname" placeholder="Last Name:"><br>
+                <br>
+                <input type = "number" id = "age" placeholder="age:"><br>
+                <br>
+                <input type = "date" id = "birthday" placeholder="Birthday:"><br>
+                <br>
+                <input type = "text" id = "email" placeholder="Email:"><br>
+                <br>
+                <input type = "number" id = "contact" placeholder="Contact #:"><br>
+                <br>
+                <form id = "gender">
+                <label>Gender</label>
+                <br>
+                <input type = "radio" name = "gender" value = "Male">
+                <label>Male</label>
+                <input type = "radio" name = "gender" value = "Female">
+                <label>Female</label>
+                <input type = "radio" name = "gender" value = "Other">
+                <label>Other</label>
+                </form>
+                <select id = "program">
+                    <option>BSIT</option>
+                    <option>BSCS</option>
+                    <option>BMMA</option>
+                    <option>BACOM</option>
+                    <option>BSBA</option>
+                    <option>BSTM</option>
+                </select>
+                <br><br>
+                <button type = "button" onclick = "reveal()">Reveal</button>
+                <button type="button" onclick= "register()">Register</button>
+                <p id="registerMessage"></p>
+                </div>
+
+        
+            </body>
+
+
+            <div id = "register-output">
+                <p id = "usershow"></p>
+                <p id = "passwordshow"></p>
+                <p id = "firstnameshow"></p>
+                <p id = "lastnameshow"></p>
+                <p id = "ageshow"></p>
+                <p id = "birthdayshow"></p>
+                <p id = "emailshow"></p>
+                <p id = "contactshow"></p>
+                <p id = "gendershow"></p>
+                <p id = "programshow"></p>
+                </div>
+</html>
+
+<script src="registerform.js"></script>
+<script src="script.js"></script>
